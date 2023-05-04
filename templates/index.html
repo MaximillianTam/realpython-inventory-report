@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  </head>
+  <body>
+    <h1>10500 & 10501 Low Inventory Report</h1>
+    <p>Input Savannah + US ECOM report and the SFCC Product Export Status Report</p>
+ 
+    <form method="POST" enctype="multipart/form-data" action="/process">
+
+        <b><p>Savannah + US ECOM</p></b>
+        <input type="file" id="myFile" name="uploaded-file-1" accept=".xlsx">
+
+        <b><p>SFCC Report</p></b>
+        <input type="file" id="myFile" name="uploaded-file-2" accept=".csv">
+
+        <br><br>
+
+        <input type="submit" name="action" value="Export Inventory Report">
+
+        <br><br>
+
+        <!-- <a>
+          <img src="https://www.petinsurancequotes.com/app/uploads/2018/11/shih-tzu-dog-insurance-e1592846328744.jpeg" alt="Your image description here">
+      </a> -->
+
+      <!-- <head>
+        <title>Random Image</title>
+      </head> -->
+
+        <img id="random-image" src="" alt="Random Image">
+        
+        <script>
+          // Define an array of image URLs
+          var images = [
+            'https://www.petinsurancequotes.com/app/uploads/2018/11/shih-tzu-dog-insurance-e1592846328744.jpeg',
+            'https://cdn.theatlantic.com/thumbor/eBqsd6S_CYtB5pB5v715pc4e9Ac=/1x245:3597x2268/960x540/media/img/mt/2019/01/AP_375225692567-1/original.jpg',
+            'https://www.thesprucepets.com/thmb/BdxJ2rJwBq63fCX__v-vfASRci8=/1080x0/filters:no_upscale():strip_icc()/31170124_355309831644176_4994517524629422080_n-5b3a4d0ec9e77c003771e6a6.jpg',
+            'https://i.ytimg.com/vi/B38LYJMBWqc/maxresdefault.jpg'
+            // Add more image URLs here
+          ];
+          
+          // Generate a random number between 0 and the number of images in the array
+          var randomNumber = Math.floor(Math.random() * images.length);
+          
+          // Set the source of the <img> tag to the randomly selected image
+          var randomImage = document.getElementById('random-image');
+          randomImage.src = images[randomNumber];
+        </script>
+
+
+        <!-- <input type="submit" name="action" value="New Export">  -->
+    </form>
+  <!-- <p style="color:blue;">Choose csv file to upload</p> -->
+  </body>
+</html>
